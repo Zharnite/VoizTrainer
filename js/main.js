@@ -82,7 +82,10 @@ function drawLoop( time ) {
 
     else {
     	canvasContext.fillStyle = "red";
-    	navigator.vibrate(1000);
+    	steTimeout(fuction(){
+    		navigator.vibrate(1000);
+    	}, 7000);
+
     }
         
 
