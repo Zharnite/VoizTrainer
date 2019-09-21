@@ -37,8 +37,8 @@ function createAudioMeter(audioContext,clipLevel,averaging,clipLag) {
 	processor.clipping = false;
 	processor.lastClip = 0;
 	processor.volume = 0;
-	processor.clipLevel = clipLevel || 0.40;
-	processor.averaging = averaging || 0.45;
+	processor.clipLevel = clipLevel || 0.22;
+	processor.averaging = averaging || 0.25;
 	processor.clipLag = clipLag || 750;
 
 	// this will have no effect, since we don't copy the input to the output,
