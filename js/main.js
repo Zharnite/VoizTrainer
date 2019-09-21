@@ -1,6 +1,10 @@
 // Vibrate once for one second
 navigator.vibrate(1000);
 
+// Vibrate multiple times for multiple durations
+// Vibrate for three seconds, wait two seconds, then vibrate for one second
+navigator.vibrate([3000, 2000, 1000]);
+
 
 
 // import p5 from 'p5';
@@ -79,11 +83,15 @@ function drawLoop( time ) {
     canvasContext.clearRect(0,0,WIDTH,HEIGHT);
 
     // check if we're currently clipping
-    if (meter.checkClipping())
+    if (meter.checkClipping()) {
         canvasContext.fillStyle = "green";
+    }
 
-    else
-        canvasContext.fillStyle = "red";
+    else {
+    	canvasContext.fillStyle = "red";
+    	navigator.vibrate(1000);
+    }
+        
 
     // draw a bar based on the current volume
     canvasContext.fillRect(0, 0, meter.volume*WIDTH*1.4, HEIGHT);
