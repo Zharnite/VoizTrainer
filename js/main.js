@@ -69,6 +69,18 @@ function gotStream(stream) {
 
     // kick off the visual updating
     drawLoop();
+    // console.log("hi")
+    // if (meter.checkClipping()) {
+    //     canvasContext.fillStyle = "green";
+        
+    // }
+
+    // else {
+    // 	canvasContext.fillStyle = "red";
+    // 	navigator.vibrate(1);
+    	
+    // }
+
 }
 
 function drawLoop( time ) {
@@ -83,9 +95,7 @@ function drawLoop( time ) {
 
     else {
     	canvasContext.fillStyle = "red";
-    	navigator.vibrate(1);
-
-    	
+    	navigator.vibrate(10);
     	
     }
         
