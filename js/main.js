@@ -78,14 +78,15 @@ function drawLoop( time ) {
     // check if we're currently clipping
     if (meter.checkClipping()) {
         canvasContext.fillStyle = "green";
+        setTimeout(function(){
+    		
+    	}, 3000);
     }
 
     else {
     	canvasContext.fillStyle = "red";
-    	setTimeout(function(){
-    		navigator.vibrate(1000);
-    	}, 7000);
-
+    	navigator.vibrate(1000);
+    	
     }
         
 
