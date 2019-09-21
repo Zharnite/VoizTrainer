@@ -1,10 +1,3 @@
-// Vibrate once for one second
-navigator.vibrate(1000);
-
-// Vibrate multiple times for multiple durations
-// Vibrate for three seconds, wait two seconds, then vibrate for one second
-navigator.vibrate([3000, 2000, 1000]);
-
 
 
 // import p5 from 'p5';
